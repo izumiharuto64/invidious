@@ -1,1 +1,1 @@
-FROM ghcr.io/iv-org/invidious:latest
+FROM invidious/invidious:latest
