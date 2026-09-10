@@ -3,6 +3,6 @@ db:
   dbname: invidious_izumih
   host: dpg-dagugp80p65s739rf620-a.singapore-postgres.render.com
   port: 5432
-hmac_key: izumih_secret_key_987654321_invidious
+hmac_key: k9F3mX7p2Q8vL1wN5bR4tJ6gY0sZ3aU8
 check_tables: true
 https_only: true
