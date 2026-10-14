@@ -1,0 +1,30 @@
+databases:
+  - name: invidious-db
+    databaseName: invidious
+    user: invidious
+    plan: free
+
+services:
+  - type: web
+    name: invidious
+    env: docker
+    plan: free
+    repo: https://github.com/izumiharuto64/invidious
+    branch: master
+    envVars:
+      - key: DB_HOST
+        fromDatabase:
+          name: invidious-db
+          property: host
+      - key: DB_USER
+        fromDatabase:
+          name: invidious-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: invidious-db
+          property: password
+      - key: DB_NAME
+        fromDatabase:
+          name: invidious-db
+          property: name
